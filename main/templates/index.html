@@ -290,11 +290,13 @@
                                  {{ project.image_2x.url }} 2x" alt="">
                 </a>
             </div> <!-- end folio-item -->
+            {% endfor%}
 
         </div> <!-- end folio-list -->
 
         <!-- Modal Templates Popup
         =========================================================== -->
+        {% for project in object_list %}
         <div id="modal-{{ project.id }}" hidden>
             <div class="modal-popup">
                 <img src="{{ project.header_image.url }}" alt="" />
@@ -312,7 +314,6 @@
                 <a href={{ project.project_link }} class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
-        {% empty %}
         {% endfor %}
     </section> <!-- end s-portfolio -->
     {% endif %}
