@@ -44,12 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'taggit',
-    'django_cleanup.apps.CleanupConfig',
-    
-    # Media Cloudinary
     'cloudinary',
     'cloudinary_storage',
+    'taggit',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
